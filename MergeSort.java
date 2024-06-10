@@ -20,13 +20,13 @@ public class MergeSort {
         }
     }
 
-    private static void conquer(int[] a, int si, int mid, int ei) { // Corrected method name
-        int merge[] = new int[ei - si + 1]; // Corrected array initialization
+    private static void conquer(int[] a, int si, int mid, int ei) {
+        int merge[] = new int[ei - si + 1]; 
         int idx1 = si;
         int idx2 = mid + 1;
         int x = 0;
 
-        while (idx1 <= mid && idx2 <= ei) { // Corrected loop conditions
+        while (idx1 <= mid && idx2 <= ei) { 
             if (a[idx1] <= a[idx2]) {
                 merge[x++] = a[idx1++];
             } else {
